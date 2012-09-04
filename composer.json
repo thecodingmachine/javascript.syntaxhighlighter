@@ -1,0 +1,29 @@
+{
+    "name": "mouf/javascript.syntaxhighlighter",
+    "description": "This package contains the SyntaxHighlighter javascript library, along a Mouf installer file to add SyntaxHighlighter easily in your Mouf project.",
+    "keywords": ["javascript", "mouf", "SyntaxHighlighter"],
+    "homepage": "http://alexgorbatchev.com/SyntaxHighlighter/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Négrier",
+            "email": "d.negrier@thecodingmachine.com",
+            "homepage": "http://mouf-php.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.3.0",
+    	"mouf/javascript.jquery.jquery": ">=1.7.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mouf": "php/"
+        }
+    },
+    "mouf": {
+    	"install": {
+    		"install.php":"file"
+    	}
+    }    
+}
