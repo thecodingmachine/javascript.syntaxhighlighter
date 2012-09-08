@@ -134,9 +134,9 @@ class SyntaxHighlighterWebLibrary implements WebLibraryInterface, WebLibraryRend
     /**
      * Renders the CSS part of a web library.
      *
-     * @param WebLibrary $webLibrary
+     * @param WebLibraryInterface $webLibrary
      */
-    function toCssHtml(WebLibrary $webLibrary) {
+    function toCssHtml(WebLibraryInterface $webLibrary) {
     	echo '<link href="'.ROOT_URL.'vendor/mouf/javascript.syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />'."\n";
     	if($this->theme) {
     		if(strpos($this->theme, 'http://') === false && strpos($this->theme, 'https://') === false) {
@@ -151,9 +151,9 @@ class SyntaxHighlighterWebLibrary implements WebLibraryInterface, WebLibraryRend
     /**
      * Renders the JS part of a web library.
      *
-     * @param WebLibrary $webLibrary
+     * @param WebLibraryInterface $webLibrary
      */
-    function toJsHtml(WebLibrary $webLibrary) {
+    function toJsHtml(WebLibraryInterface $webLibrary) {
     	echo '<script type="text/javascript" src="'.ROOT_URL.'vendor/mouf/javascript.syntaxhighlighter/scripts/shCore.js"></script>';
     	echo '<script type="text/javascript" src="'.ROOT_URL.'vendor/mouf/javascript.syntaxhighlighter/scripts/shAutoloader.js"></script>';
     	foreach ($this->staticBrushes as $brush) {
@@ -164,9 +164,9 @@ class SyntaxHighlighterWebLibrary implements WebLibraryInterface, WebLibraryRend
     /**
      * Renders any additional HTML that should be outputed below the JS and CSS part.
      *
-     * @param WebLibrary $webLibrary
+     * @param WebLibraryInterface $webLibrary
      */
-    function toAdditionalHtml(WebLibrary $webLibrary) {
+    function toAdditionalHtml(WebLibraryInterface $webLibrary) {
     	echo '<script type="text/javascript">';
     	echo "jQuery(document).ready(function() {\n";
     	$jsStringArray = array();
