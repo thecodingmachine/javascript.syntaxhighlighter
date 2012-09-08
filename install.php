@@ -1,6 +1,9 @@
 <?php
-// First, let's request the install utilities
-require_once '../../../../mouf/actions/InstallUtils.php';
+require_once __DIR__."/../../autoload.php";
+
+use Mouf\Actions\InstallUtils;
+use Mouf\MoufManager;
+use Mouf\Html\Utils\WebLibraryManager\WebLibraryInstaller;
 
 // Let's init Mouf
 InstallUtils::init(InstallUtils::$INIT_APP);
