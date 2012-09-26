@@ -21,9 +21,11 @@
             "Mouf": "php/"
         }
     },
-    "mouf": {
-    	"install": {
-    		"install.php":"file"
-    	}
-    }    
+    "extra": {
+	    "mouf": {
+	    	"install": {
+	    		"install.php":"file"
+	    	}
+	    }
+	}
 }
