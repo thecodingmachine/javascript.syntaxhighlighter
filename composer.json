@@ -3,7 +3,7 @@
     "description": "This package contains the SyntaxHighlighter javascript library, along a Mouf installer file to add SyntaxHighlighter easily in your Mouf project.",
     "keywords": ["javascript", "mouf", "SyntaxHighlighter"],
     "homepage": "http://alexgorbatchev.com/SyntaxHighlighter/",
-    "type": "library",
+    "type": "mouf-library",
     "license": "MIT",
     "authors": [
         {
