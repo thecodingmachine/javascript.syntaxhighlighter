@@ -15,7 +15,7 @@ $moufManager = MoufManager::getMoufManager();
 if ($moufManager->instanceExists("javascript.syntaxHighlighter")) {
 	$syntaxHighlighter = $moufManager->getInstanceDescriptor("javascript.syntaxHighlighter");
 } else {
-	$syntaxHighlighter = $moufManager->createInstance("\\Mouf\\Javascript\\SyntaxHighlighterWebLibrary");
+	$syntaxHighlighter = $moufManager->createInstance("Mouf\\Javascript\\SyntaxHighlighterWebLibrary");
 	$syntaxHighlighter->setName("javascript.syntaxHighlighter");
 }
 
